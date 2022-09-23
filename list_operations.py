@@ -213,8 +213,11 @@ def delete_middle(input_list):
     ['Do', 'Re', 'Ti', 'Do']
 
     """
+    #ask about popping multiple elements from the middle
     input_list.pop(5)
     input_list.pop(4)
     input_list.pop(3)
     input_list.pop(2)
+    # input_list.pop([-3:-6])
+   
     pass
