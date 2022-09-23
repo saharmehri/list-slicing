@@ -56,10 +56,10 @@ class ListSlicingTests(unittest.TestCase):
     #     self.assertEqual(multiples, [42, 3, 6, 9, 12, 15, 18, 21, 24, 27])
     
 
-    def test_replace_third_and_last(self):
-        multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-        list_operations.replace_third_and_last(multiples)
-        self.assertEqual(multiples, [0, 3, 37, 9, 12, 15, 18, 21, 24, 37])
+    # def test_replace_third_and_last(self):
+    #     multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    #     list_operations.replace_third_and_last(multiples)
+    #     self.assertEqual(multiples, [0, 3, 37, 9, 12, 15, 18, 21, 24, 37])
     
 
     # def test_replace_middle(self):
@@ -74,10 +74,10 @@ class ListSlicingTests(unittest.TestCase):
     #     self.assertEqual(notes, ['Do', 'Re', 'Fa', 'So', 'La', 'Do'])
     
 
-    # def test_delete_middle(self):
-    #     notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-    #     list_operations.delete_middle(notes)
-    #     self.assertEqual(notes, ['Do', 'Re', 'Ti', 'Do'])
+    def test_delete_middle(self):
+        notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+        list_operations.delete_middle(notes)
+        self.assertEqual(notes, ['Do', 'Re', 'Ti', 'Do'])
 
 
 if __name__ == "__main__":
